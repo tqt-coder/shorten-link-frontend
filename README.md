@@ -1,7 +1,7 @@
 # Shorten Link frontend project
 ## Cách triển khai chạy test ở Local.
 1. Deploy backend stack  
-Backend stack có tại repository: `https://github.com/hoanglinhdigital/devops-for-beginner` folder: `serverless-application-model`
+Backend stack có tại repository: `https://github.com/hoanglinhdigital/shorten-link-backend`
 2. Copy toàn bộ nội dung trong `vite.config-local.js` ghi đè sang `vite.config.js`  
 *Mục đích để tạo proxy từ local lên API Gateway tránh lỗi CORS error.
 
@@ -15,7 +15,7 @@ Backend stack có tại repository: `https://github.com/hoanglinhdigital/devops-
 
 ## Cách triển khai lên S3 + CloudFront
 1. Deploy backend stack  
-* Backend stack có tại repository: `https://github.com/hoanglinhdigital/devops-for-beginner` folder: `serverless-application-model`
+* Backend stack có tại repository: `https://github.com/hoanglinhdigital/shorten-link-backend`
 * Test thử việc truy cập tạo shorten link & link sau khi tạo ra (sử dụng Postman)
 
 2. Tạo CloudFront distribution  
