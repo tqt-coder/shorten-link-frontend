@@ -50,4 +50,21 @@
   padding: 10px;
   border-radius: 5px;
 }
-
+.button-common{
+  background-color: hsl(222, 80%, 39%);
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.input-url{
+  font-family: Arial, sans-serif;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+}
+.url-label{
+  font-family: Arial, sans-serif;
+}

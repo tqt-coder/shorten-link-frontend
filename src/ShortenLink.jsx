@@ -4,12 +4,13 @@ function ShortenLink() {
     const [link, setLink] = useState('');
     const [shortLink, setShortLink] = useState('');
     const [showPopup, setShowPopup] = useState(false);
+    const baseUrl = import.meta.env.VITE_BASE_URL;
 
     const handleGenerateShortLink = () => {
         const requestBody = {
             url: link
         };
-        fetch(('/dev/generate-short-url'), {
+        fetch(('/api/generate-short-url'), {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,15 +34,16 @@ function ShortenLink() {
 
     const handleClosePopup = () => {
         setShowPopup(false);
+        setLink('');
     };
 
     return (
         <>
             <h1 style={{ color: 'green' }}>Welcome to Shortenlink Pro!!</h1>
             <div className="wrapper">
-                <label htmlFor="originalLink">Original Link</label>
-                <input type="text" id="originalLink" value={link} onChange={e => setLink(e.target.value)} />
-                <button onClick={handleGenerateShortLink}>Generate short Link</button>
+                <label className='url-label' htmlFor="originalLink">Original Link</label>
+                <input className='input-url'type="text" id="originalLink" value={link} onChange={e => setLink(e.target.value)} /><br/>
+                <button className='button-common' onClick={handleGenerateShortLink}>Generate short Link</button>
             </div>
 
             {showPopup && (
