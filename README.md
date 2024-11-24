@@ -1,5 +1,5 @@
 # Shorten Link frontend project
-## Cách triển khai chạy test ở Local.
+## Cách triển khai chạy test ở máy Local.
 1. Deploy backend stack  
 Backend stack có tại repository: `https://github.com/hoanglinhdigital/shorten-link-backend`
 2. Copy toàn bộ nội dung trong `vite.config-local.js` ghi đè sang `vite.config.js`  
